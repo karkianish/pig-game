@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <title>Pig Game</title>
+</head>
+
+<body>
+  <div class='container mt-1' style='background: lightgray'>
+    <div class='row'>
+      <div class='col mt-1 text-center'>
+        <input type="button" class='btn btn-primary text-white' id='btn-new-game' value='New Game'>
+      </div>
+    </div>
+    <div class='row align-items-center mt-3'>
+      <div class='col'>
+        <div class="card">
+          <div class="card-header" id='player1-name'>Player1</div>
+          <div class="card-body">
+            <div id='player1-total-score'>Total score</div>
+          </div>
+          <div class="card-footer">
+            <div id='player2-current-score'>current score</div>
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <div class="card">
+          <div class="card-body">
+            <div id='dice-rolled'>Rolled Dice</div>
+          </div>
+        </div>
+      </div>
+      <div class='col'>
+        <div class="card">
+          <div class="card-header" id='player2-name'>Player2</div>
+          <div class="card-body">
+            <div class='text text-center' id='player2-total-score'>Total score</div>
+          </div>
+          <div class="card-footer">
+            <div id='player2-current-score'>current score</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col text-center mt-2'>
+        <input type="button" id='btn-roll-dice' class='btn btn-success text-white' value='Roll Dice'>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col text-center mt-2 mb-1'>
+        <input type="button" id='btn-hold' class='btn btn-warning text-white' value='Hold'>
+      </div>
+    </div>
+  </div>
+
+
+  <!--<script src="app.js"></script>-->
+  <script src="pig-game.js"></script>
+</body>
+
+</html>
